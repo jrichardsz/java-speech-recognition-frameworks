@@ -1,0 +1,29 @@
+#JSGF V1.0;
+grammar sentence;
+
+public <sentence> =
+[<dato0>]
+[<dato1>]
+[<dato2>]
+[<dato3>]
+[<dato4>]
+[<dato1><dato2><dato3><dato4>]
+[<dato5>][<dato6>][<dato7>][<dato8>][<dato9>][<dato10>][<dato11>][<dato12>][<dato13>][<dato14>]
+[<dato15>];
+
+<dato0>=Metodologia de la Investigacion Cientifica;
+<dato1>=Java;
+<dato2>=Programacion;
+<dato3>=Orientada;
+<dato4>=Objetos;
+<dato5>=cmop;
+<dato6>=Clases;
+<dato7>=Horario;
+<dato8>=Canario;
+<dato9>=Radio;
+<dato10>=Television;
+<dato11>=Ingenieria;
+<dato12>=Industrial;
+<dato13>=Informatica;
+<dato14>=Comida;
+<dato15>=1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 ;
