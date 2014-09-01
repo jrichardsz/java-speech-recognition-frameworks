@@ -1,17 +1,42 @@
-in order to use maven, include custom library into maven local repository
+Url proyect:
 
-go to resources (cd comand ) and run this maven commands
+https://github.com/cmusphinx/sphinx4/tree/master/sphinx4-core
 
-mvn install:install-file -Dfile=cmu_us_kal-1.0.jar -DgroupId=com.sun.speech.freetts.en.us -DartifactId=cmu_us_kal -Dversion=1.0 -Dpackaging=jar
 
-mvn install:install-file -Dfile=cmulex-1.0.jar -DgroupId=com.sun.speech.freetts.en.us -DartifactId=cmulex -Dversion=1.0 -Dpackaging=jar
+Sucess Log:
 
-mvn install:install-file -Dfile=en_us-1.0.jar -DgroupId=com.sun.speech.freetts.en -DartifactId=en_us -Dversion=1.0 -Dpackaging=jar
-
-mvn install:install-file -Dfile=freetts-1.0.jar -DgroupId=com.sun.speech -DartifactId=freetts -Dversion=1.0 -Dpackaging=jar
-
-mvn install:install-file -Dfile=jsapi-1.0.jar -DgroupId=javax.speech -DartifactId=jsapi -Dversion=1.0 -Dpackaging=jar
-
-mvn install:install-file -Dfile=sphinx4-1.0.jar -DgroupId=edu.cmu.sphinx -DartifactId=sphinx4 -Dversion=1.0 -Dpackaging=jar
-
-mvn install:install-file -Dfile=WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz-1.0.jar -DgroupId=edu.cmu.sphinx.model.acoustic.WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz -DartifactId=WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz -Dversion=1.0 -Dpackaging=jar
+[Voce debug] Beginning initialization
+[Voce] Initializing recognizer. This may take some time...
+[Voce debug] Starting microphone...
+[Voce debug] Microphone on
+[Voce] Initialization complete
+[Voce debug] Recognition thread starting
+This is a speech recognition test. Speak digits from 0-9 into the microphone. Speak 'quit' to quit.
+[Voce debug] Finished recognizing
+You said: eight eight
+[Voce debug] Finished recognizing
+You said: oh eight
+[Voce debug] Finished recognizing
+You said: six
+[Voce debug] Finished recognizing
+You said: seven
+[Voce debug] Finished recognizing
+You said: one
+[Voce debug] Finished recognizing
+You said: two oh
+[Voce debug] Finished recognizing
+You said: three
+[Voce debug] Finished recognizing
+You said: four
+[Voce debug] Finished recognizing
+You said: five
+[Voce debug] Finished recognizing
+You said: six
+[Voce debug] Finished recognizing
+You said: seven
+[Voce debug] Finished recognizing
+You said: eight
+[Voce debug] Finished recognizing
+You said: nine
+[Voce debug] Finished recognizing
+You said: oh four

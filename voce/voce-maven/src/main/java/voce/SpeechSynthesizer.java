@@ -25,25 +25,12 @@
 
 package voce;
 
-import java.io.File;
-import java.util.Locale;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
+import java.util.*;
 
-import javax.speech.Central;
-import javax.speech.Engine;
-import javax.speech.EngineList;
-import javax.speech.EngineCreate;
-import javax.speech.EngineException;
-import javax.speech.EngineModeDesc;
-import javax.speech.synthesis.Synthesizer;
-import javax.speech.synthesis.SynthesizerModeDesc;
-import javax.speech.synthesis.SynthesizerProperties;
-import javax.speech.synthesis.Voice;
-import javax.speech.synthesis.Speakable;
-import javax.speech.synthesis.SpeakableAdapter;
-import javax.speech.synthesis.SpeakableEvent;
-import com.sun.speech.freetts.jsapi.FreeTTSEngineCentral; 
+import javax.speech.*;
+import javax.speech.synthesis.*;
+
+import com.sun.speech.freetts.jsapi.*;
 
 /// Handles all speech synthesis (i.e. text-to-speech) 
 /// functions.

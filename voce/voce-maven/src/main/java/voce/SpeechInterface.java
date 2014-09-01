@@ -47,7 +47,7 @@ public class SpeechInterface
 	public static void init(String vocePath, boolean initSynthesis, 
 		boolean initRecognition, String grammarPath, String grammarName)
 	{
-		Utils.setPrintDebug(false);
+		//Utils.setPrintDebug(true);
 		Utils.log("debug", "Beginning initialization");
 
 		if (!initSynthesis && !initRecognition)
