@@ -13,15 +13,21 @@ In this repository I will do tests of different speech recognition apis develope
 
 ##Status Tests
 
+> Voce API
+
+ >> STATUS: Sucess
+ 
+ >> DESCRIPTION : Sucess execution. See log.
+
 > Cloudgarden API
 
  >> STATUS: Compilation Error
  
  >> DESCRIPTION : UNKNOW
 
-> Cloudgarden API
+> Darkprograms API
 
- >> STATUS: Compilation Error
+ >> STATUS: Execution Error
  
  >> DESCRIPTION : UNKNOW
  
