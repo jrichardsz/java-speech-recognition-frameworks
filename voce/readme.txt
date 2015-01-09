@@ -1,4 +1,4 @@
-Url proyect:
+Url project:
 
 https://github.com/cmusphinx/sphinx4/tree/master/sphinx4-core
 
