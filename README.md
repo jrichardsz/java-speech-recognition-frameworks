@@ -18,6 +18,8 @@ In this repository I will do tests of different speech recognition apis develope
  >> STATUS: Sucess
  
  >> DESCRIPTION : Sucess execution. See log.
+ 
+ >> S.O: Windows
 
 > Cloudgarden API
 
@@ -25,11 +27,15 @@ In this repository I will do tests of different speech recognition apis develope
  
  >> DESCRIPTION : UNKNOW
 
+ >> S.O: Windows
+ 
 > Darkprograms API
 
  >> STATUS: Execution Error
  
  >> DESCRIPTION : UNKNOW
+
+ >> S.O: Windows 
  
 ##Maven Dependecies
 
