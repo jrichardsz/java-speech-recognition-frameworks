@@ -13,7 +13,7 @@ In this repository I will do tests of different speech recognition apis develope
 
 ##Status Tests
 
-  +-------+----------+------+
++-------+----------+------+
 | Table Headings   | Here |
 +-------+----------+------+
 | Sub   | Headings | Too  |
