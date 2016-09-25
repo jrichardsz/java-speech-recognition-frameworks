@@ -15,9 +15,9 @@ In this repository I will do tests of different speech recognition apis develope
 
 > Voce API
 
- >> STATUS: Sucess
+ >> STATUS: Success
  
- >> DESCRIPTION : Sucess execution. See log.
+ >> DESCRIPTION : Success execution. See log.
  
  >> S.O: Windows
 
@@ -39,4 +39,4 @@ In this repository I will do tests of different speech recognition apis develope
  
 ##Maven Dependecies
 
-  * Please install this depencies ir order to compile proyect!
+  * Please install this depencies ir order to compile project!
