@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.jrichardsz.poc.voce</groupId>
+	<artifactId>poc-voce-recognition</artifactId>
+	<version>1.0.0</version>
+
+	<dependencies>
+		
+		<!-- offline jar -->
+		<dependency>
+			<groupId>voce</groupId>
+			<artifactId>voce</artifactId>
+			<version>0.9.1</version>
+		</dependency>
+		<!-- offline jar -->		
+		<dependency>
+			<groupId>edu.cmu.sphinx.model.acoustic.WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz</groupId>
+			<artifactId>WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz</artifactId>
+			<version>1.0</version>
+		</dependency> 		
+		<dependency>
+			<groupId>org.mobicents.external.freetts</groupId>
+			<artifactId>cmu_us_kal</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mobicents.external.freetts</groupId>
+			<artifactId>cmulex</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mobicents.external.freetts</groupId>
+			<artifactId>en_us</artifactId>
+			<version>1.0</version>
+		</dependency>		
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+			  <groupId>org.codehaus.mojo</groupId>
+			  <artifactId>exec-maven-plugin</artifactId>
+			  <version>1.2.1</version>
+			  <executions>
+			    <execution>
+			      <goals>
+			        <goal>java</goal>
+			      </goals>
+			    </execution>
+			  </executions>
+			  <configuration>
+			  	<includeProjectDependencies>true</includeProjectDependencies>
+			  </configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	
+</project>

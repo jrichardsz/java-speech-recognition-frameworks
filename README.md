@@ -36,7 +36,4 @@ In this repository I will do tests of different speech recognition apis develope
  >> DESCRIPTION : UNKNOW
 
  >> S.O: Windows 
- 
-##Maven Dependecies
 
-  * Please install this depencies ir order to compile project!
