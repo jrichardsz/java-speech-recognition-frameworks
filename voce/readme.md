@@ -135,12 +135,4 @@ You said: three
 
 ## Versioning
 
-Current version is 0.9.1
-
-## Authors
-
-* **Richard Osmar Leon Ingaruca** - *Migrate to maven* - [contact me](http://jrichardsz.weebly.com/contact.html)
-
-## License
-
-Voce is licensed under the BSD or LGPL Open Source licenses.  Also, be sure to read the licenses for [FreeTTS](http://freetts.sourceforge.net/docs/index.php) and [CMU Sphinx4](http://cmusphinx.sourceforge.net/wiki/tutorialsphinx4).
+...

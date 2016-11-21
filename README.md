@@ -1,7 +1,9 @@
-# Java Recognition Speech Apis
+# Java Recognition Speech Apis Tests and Proofs of Concept
 ===============
 
 In this repository I will do tests of different speech recognition apis developed with java .
+
+Keywords : Java Speech recognition api java voce speech FreeTTS CMU Sphinx Speech Recognizer Text To Speech voce.sourceforge.net speech recognition using Java and Sphinx Pure Java speech recognition library java SpeechRecognition 
 
 ##Goals
 
@@ -37,3 +39,10 @@ In this repository I will do tests of different speech recognition apis develope
 
  >> S.O: Windows 
 
+## Authors
+
+* **Richard Osmar Leon Ingaruca** - *Migrate to maven* - [contact me](http://jrichardsz.weebly.com/contact.html)
+
+## License
+
+Voce is licensed under the BSD or LGPL Open Source licenses.  Also, be sure to read the licenses for [FreeTTS](http://freetts.sourceforge.net/docs/index.php) and [CMU Sphinx4](http://cmusphinx.sourceforge.net/wiki/tutorialsphinx4).
