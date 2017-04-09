@@ -149,7 +149,15 @@ Use the latest version of:
 
 [http://cmusphinx.sourceforge.net/wiki/tutorial](http://cmusphinx.sourceforge.net/wiki/tutorial)
 
-## Versioning
+## Useful links
+
+http://homepages.abdn.ac.uk/k.vdeemter/pages/teaching/NLP/practicals/JSGFGrammar.html
+
+https://puneetk.com/basics-of-java-speech-grammar-format-jsgf
+
+http://www.instructables.com/id/Animatronic-Talking-Tree-Part-2-Speech-Recogni/step4/Grammar-Files/
+
+https://www.w3.org/TR/jsgf/
 
 ...
 
