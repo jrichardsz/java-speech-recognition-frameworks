@@ -1,6 +1,7 @@
 package org.jrichardsz.poc.voce;
 
 import voce.*;
+import java.io.File;
 
 /*************************************************************************
  *                                                                       *
@@ -32,16 +33,25 @@ import voce.*;
 
 public class RecognitionExternalConfigTest
 {
-	public static void main(String[] argv)
-	{
+	public static void main(String[] args)
+	 throws Exception{
 		Utils.setPrintDebug(true);
 		
-		String voicePath = "\\app-config\\voce";
-		String grammarPath = "\\app-config\\voce\\gram";
+		if(args == null || args.length < 1){
+			throw new Exception("voice and grammar paths are required.");
+		}
+		
+		String configPath = args[0];
+		
+		String voicePath = configPath + File.separator + "voice";
+		String grammarPath = configPath + File.separator + "grammar";
+		String grammarName = PathHelper.getGrammarFileName(grammarPath);
 		
 		System.out.println("voicePath:"+voicePath);
+		System.out.println("grammarPath:"+grammarPath);
+		System.out.println("grammarName:"+grammarName);
 
-		voce.SpeechInterface.init(voicePath, false, true,grammarPath, "digits");
+		voce.SpeechInterface.init(voicePath, false, true,grammarPath, grammarName);
 
 		System.out.println("This is a speech recognition test. " 
 			+ "Speak digits from 0-9 into the microphone. " 
@@ -71,7 +81,6 @@ public class RecognitionExternalConfigTest
 				}
 
 				System.out.println("You said: " + s);
-				//voce.SpeechInterface.synthesize(s);
 			}
 		}
 

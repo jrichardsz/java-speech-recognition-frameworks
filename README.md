@@ -5,7 +5,7 @@ In this repository I will do tests of different speech recognition apis develope
 
 Keywords : Java Speech recognition api java voce speech FreeTTS CMU Sphinx Speech Recognizer Text To Speech voce.sourceforge.net speech recognition using Java and Sphinx Pure Java speech recognition library java SpeechRecognition 
 
-##Goals
+## Goals
 
   * Collect in one place all the java libraries of text to speech (TTS ) and speech recognition.
   * Improving the use of the libraries using maven.
@@ -13,35 +13,17 @@ Keywords : Java Speech recognition api java voce speech FreeTTS CMU Sphinx Speec
   * Using these libraries for my future , fictitious and foreign projects :{ )
   * Have a fun time.
 
-##Status Tests
-
-> Voce API
-
- >> STATUS: Success
+## Status Tests
  
- >> DESCRIPTION : Success execution. See log.
- 
- >> S.O: Windows
-
-> Cloudgarden API
-
- >> STATUS: Compilation Error
- 
- >> DESCRIPTION : UNKNOW
-
- >> S.O: Windows
- 
-> Darkprograms API
-
- >> STATUS: Execution Error
- 
- >> DESCRIPTION : UNKNOW
-
- >> S.O: Windows 
-
+| library name | s.o     | test status       | description |
+|--------------|---------|-------------------|-------------|
+| voce         | windows | sucess            |             |
+| Cloudgarden  | windows | Compilation Error |             |
+| Darkprograms | windows | Execution Error   |             |
+                         
 ## Authors
 
-* **Richard Osmar Leon Ingaruca** - *Migrate to maven* - [contact me](http://jrichardsz.weebly.com/contact.html)
+* **Richard Osmar Leon Ingaruca** - *JRichardsz* - [contact me](http://jrichardsz.github.io)
 
 ## License
 

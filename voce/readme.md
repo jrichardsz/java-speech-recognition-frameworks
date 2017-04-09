@@ -56,21 +56,29 @@ mvn clean install
 
 If you dont like use an IDE to run a simple java code, try this:
 
-- Move configuration files in any location of you operative system 
+- Move configuration files to any location of you operative system. Example : 
 
-[config-files](https://github.com/jrichardsz/java-speech-recognition-apis/tree/master/voce/config-files)
+  [config-files](./voce/config-files)
 
-- Open java class **org.jrichardsz.poc.voce.RecognitionExternalConfigTest** and edit with your external path configurations
-
-```java
-String voicePath = "\\app-config\\voce";
-String grammarPath = "\\app-config\\voce\\gram";
+  **Note:** In windows s.o 
+  
+  - Your config file must be in the same hard drive of cloned repository
+  - If your config files are in
+  
+```
+  D:\some_folder\config-files
 ```
 
-- execute
+  You must change to 
 
 ```
-mvn clean package exec:java -Dexec.mainClass="org.jrichardsz.poc.voce.RecognitionExternalConfigTest"
+  \some_folder\config-files
+```
+  
+- finally, execute this
+
+```
+mvn clean package exec:java -Dexec.mainClass="org.jrichardsz.poc.voce.RecognitionExternalConfigTest" -Dexec.args="/some_folder/config-files"
 ```
 
 - If no errors, wait to the following text appear and start to say any number from 0 to 9
@@ -90,6 +98,9 @@ mvn clean package exec:java -Dexec.mainClass="org.jrichardsz.poc.voce.Recognitio
 
 .....
 
+voicePath:/some_folder/config-files\voice
+grammarPath:/some_folder/config-files\grammar
+grammarName:digits
 
 [Voce debug] Beginning initialization
 [Voce] Initializing recognizer. This may take some time...
@@ -136,3 +147,11 @@ You said: three
 ## Versioning
 
 ...
+
+## Authors
+
+* **Richard Osmar Leon Ingaruca** - *JRichardsz* - [contact me](http://jrichardsz.github.io)
+
+## License
+
+Voce is licensed under the BSD or LGPL Open Source licenses.  Also, be sure to read the licenses for [FreeTTS](http://freetts.sourceforge.net/docs/index.php) and [CMU Sphinx4](http://cmusphinx.sourceforge.net/wiki/tutorialsphinx4).
