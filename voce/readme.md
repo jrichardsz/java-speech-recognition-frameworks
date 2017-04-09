@@ -144,6 +144,11 @@ You said: three
 
 ....
 
+## Coming Soon
+Use the latest version of:
+
+[http://cmusphinx.sourceforge.net/wiki/tutorial](http://cmusphinx.sourceforge.net/wiki/tutorial)
+
 ## Versioning
 
 ...
