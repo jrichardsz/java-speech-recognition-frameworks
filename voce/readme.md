@@ -58,7 +58,7 @@ If you dont like use an IDE to run a simple java code, try this:
 
 - Move configuration files to any location of you operative system. Example : 
 
-  [config-files](./voce/config-files)
+  [config-files](./config-files)
 
   **Note:** In windows s.o 
   
