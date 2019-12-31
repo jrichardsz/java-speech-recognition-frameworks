@@ -28,39 +28,39 @@ import java.io.File;
  *                                                                       *
  *************************************************************************/
 
-/// A sample application showing how to use Voce's speech recognition 
+/// A sample application showing how to use Voce's speech recognition
 /// capabilities.
 
-public class RecognitionExternalConfigTest
+public class RecognitionTest
 {
 	public static void main(String[] args)
 	 throws Exception{
 		Utils.setPrintDebug(true);
-		
+
 		if(args == null || args.length < 1){
 			throw new Exception("voice and grammar paths are required.");
 		}
-		
+
 		String configPath = args[0];
-		
-		String voicePath = configPath + File.separator + "voice";
+
+		String vocePath = configPath + File.separator + "voice";
 		String grammarPath = configPath + File.separator + "grammar";
 		String grammarName = PathHelper.getGrammarFileName(grammarPath);
-		
-		System.out.println("voicePath:"+voicePath);
+
+		System.out.println("vocePath:"+vocePath);
 		System.out.println("grammarPath:"+grammarPath);
 		System.out.println("grammarName:"+grammarName);
 
-		voce.SpeechInterface.init(voicePath, false, true,grammarPath, grammarName);
+		voce.SpeechInterface.init(vocePath, false, true,grammarPath, grammarName);
 
-		System.out.println("This is a speech recognition test. " 
-			+ "Speak digits from 0-9 into the microphone. " 
-			+ "Speak 'quit' to quit.");
+		System.out.println("This is a speech recognition test. "
+			+ "Speak agree your .gram file into the microphone. "
+			+ "Speak 'bye' to quit.");
 
 		boolean quit = false;
 		while (!quit)
 		{
-			// Normally, applications would do application-specific things 
+			// Normally, applications would do application-specific things
 			// here.  For this sample, we'll just sleep for a little bit.
 			try
 			{
@@ -75,7 +75,7 @@ public class RecognitionExternalConfigTest
 				String s = voce.SpeechInterface.popRecognizedString();
 
 				// Check if the string contains 'quit'.
-				if (-1 != s.indexOf("quit"))
+				if (-1 != s.indexOf("bye"))
 				{
 					quit = true;
 				}
@@ -88,4 +88,3 @@ public class RecognitionExternalConfigTest
 		System.exit(0);
 	}
 }
-

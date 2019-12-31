@@ -17,7 +17,7 @@ Keywords : Java Speech recognition api java voce speech FreeTTS CMU Sphinx Speec
  
 | library name | s.o     | test status       | description |
 |--------------|---------|-------------------|-------------|
-| voce         | windows | sucess            |             |
+| voce         | windows/linux | success            | library can recognize simple words and numbers  |
 | Cloudgarden  | windows | Compilation Error |             |
 | Darkprograms | windows | Execution Error   |             |
                          

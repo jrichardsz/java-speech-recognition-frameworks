@@ -1,0 +1,6 @@
+#JSGF V1.0;
+
+grammar demo;
+//just one number
+public <numbers> = (zero | one | two | three | four | five | six | seven | eight | nine) ;
+public <commands> = (bye) ;

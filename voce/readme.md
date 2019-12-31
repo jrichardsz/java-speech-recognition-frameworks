@@ -1,6 +1,6 @@
-# Voce http://voce.sourceforge.net Tests and Proofs of Concept
+# Voce Test and Proof of Concept
 
-Keywords : Java Speech recognition api java voce speech FreeTTS CMU Sphinx Speech Recognizer Text To Speech voce.sourceforge.net speech recognition using Java and Sphinx Pure Java speech recognition library java SpeechRecognition 
+Keywords : Java Speech recognition api java voce speech FreeTTS CMU Sphinx Speech Recognizer Text To Speech voce.sourceforge.net speech recognition using Java and Sphinx Pure Java speech recognition library java SpeechRecognition
 
 # Inspiration
 
@@ -12,73 +12,31 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
+- Java 7 or 8
 - [Download Maven](http://maven.apache.org/download.cgi)
 - [Install Maven](http://maven.apache.org/install.html)
 
-In order to compile and get your own library of voce jar, install this two offline jars in your local maven :
+In order to test this source code, the following maven libraries are required :
 
-- clone and install this repo [https://github.com/jrichardsz/voce](https://github.com/jrichardsz/voce) using maven.
+- clone and follow the **prerequisites and install** steps of this repository [https://github.com/jrichardsz/voce](https://github.com/jrichardsz/voce).
 
-- open command line point at [offline-jars](https://github.com/jrichardsz/java-speech-recognition-apis/tree/master/voce/offline-jars) in a cloned folder.
-
-- execute
-
+- install the acoustic model library:
 
 ```
-mvn install:install-file -Dfile=WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz-1.0.jar -DgroupId=edu.cmu.sphinx.model.acoustic.WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz -DartifactId=WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz -Dversion=1.0 -Dpackaging=jar
+mvn install:install-file -Dfile=offline-jars/WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz-1.0.jar -DgroupId=edu.cmu.sphinx.model.acoustic.WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz -DartifactId=WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz -Dversion=1.0 -Dpackaging=jar
 
-```
-
-### Compile
-
-- go to cloned folder and execute
-
-```
-mvn clean package
 ```
 
 ...
-
-### Install
-
-- go to cloned folder and execute
-
-```
-mvn clean install
-```
-
-...
-
 
 ## Running the tests
 
-### No Java IDE
+### Without Java IDE
 
-If you dont like use an IDE to run a simple java code, try this:
-
-- Move configuration files to any location of you operative system. Example : 
-
-  [config-files](./config-files)
-
-  **Note:** In windows s.o 
-  
-  - Your config file must be in the same hard drive of cloned repository
-  - If your config files are in
-  
-```
-  D:\some_folder\config-files
-```
-
-  You must change to 
+If you dont like to use an IDE to run a simple java code, try this:
 
 ```
-  \some_folder\config-files
-```
-  
-- finally, execute this
-
-```
-mvn clean package exec:java -Dexec.mainClass="org.jrichardsz.poc.voce.RecognitionExternalConfigTest" -Dexec.args="/some_folder/config-files"
+mvn clean package exec:java -Dexec.mainClass="org.jrichardsz.poc.voce.RecognitionTest" -Dexec.args="config-files"
 ```
 
 - If no errors, wait to the following text appear and start to say any number from 0 to 9
@@ -125,13 +83,34 @@ You said: two oh
 You said: three
 ```
 
-
-### And coding style tests
-
 ...
 
+# Custom grammar
 
-## Deployment
+In the previous test, we are used the default grammar and voce configurations. For real usage, move configuration files to any location in yout operative system. Example :
+
+  [config-files](./config-files)
+
+  **Note:** In windows s.o
+
+  - Your config file must be in the same hard drive of cloned repository
+  - If your config files are in
+
+```
+  D:\some_folder\config-files
+```
+
+  The correct value will be:
+
+```
+  \some_folder\config-files
+```
+
+- finally, execute this
+
+```
+mvn clean package exec:java -Dexec.mainClass="org.jrichardsz.poc.voce.RecognitionTest" -Dexec.args="/some_folder/config-files"
+```
 
 ...
 
