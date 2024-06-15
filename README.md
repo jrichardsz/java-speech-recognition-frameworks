@@ -23,7 +23,7 @@ Keywords : Java Speech recognition api java voce speech FreeTTS CMU Sphinx Speec
                          
 ## Authors
 
-* **Richard Osmar Leon Ingaruca** - *JRichardsz* - [contact me](http://jrichardsz.github.io)
+*JRichardsz* - [contact me](http://jrichardsz.github.io)
 
 ## License
 
